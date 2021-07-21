@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Avoid favicon /GET request if you don't have a favicon -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <title>Single Column Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Set defaults to avoid inconsistence between browser defaults -->
+  <link rel="stylesheet" href="./css/normalize.css" media="all">
+  <!-- Project Styles -->
+  <link rel="stylesheet" href="./css/main.css" media="all">  
+</head>
+<body>
+<!-- emmet plugin
+  section.singleColumn>header.singleColumn-header>h1.singleColumn-header-h1{Header Title}^nav.singleColumn-nav>a.nav-links[href="#contentDiv$"]{Content Div $}*3^div.content>h2{Content Title}+div[id="contentDiv$"]*3>lorem50^footer.singleColumn-footer{&copy;2021}
+-->
+  <section class="singleColumn">
+    <header class="singleColumn-header">
+      <h1 class="singleColumn-header-h1">Header Title</h1>
+    </header>
+    <nav class="singleColumn-nav">
+      <a class="nav-links" href="#contentDiv1">Content Div 1</a>
+      <a class="nav-links" href="#contentDiv2">Content Div 2</a>
+      <a class="nav-links" href="#contentDiv3">Content Div 3</a>
+    </nav>
+    <div class="content">
+      <h2>Content Title</h2>
+      <div id="contentDiv1">Dolor molestiae sunt animi illum reprehenderit? Tempore repellendus sed consequuntur perspiciatis accusantium Cum dignissimos voluptatibus eum ab eaque. Laudantium illo consectetur minima temporibus neque, delectus Voluptatum culpa amet corporis animi repellendus Eos corrupti recusandae nisi id corporis. Ipsam voluptates saepe in at temporibus Nisi ut reprehenderit unde unde maiores natus.</div>
+      <div id="contentDiv2">Sit aperiam sed lorem fugit maiores Vel itaque nobis sint facilis aut Nostrum ex reprehenderit error tenetur qui sit eos expedita Ratione illo enim nihil minus molestiae? Libero fugiat temporibus minus vel quisquam Necessitatibus incidunt qui iste omnis doloremque Voluptatibus aspernatur quibusdam vitae itaque qui Id recusandae officia ut explicabo</div>
+      <div id="contentDiv3">Dolor natus provident laboriosam necessitatibus maxime. Expedita magni aliquam corrupti harum ut? Ex magnam id pariatur deleniti iure earum. Est deserunt a vitae est voluptatibus Illum minus praesentium obcaecati odio recusandae? Laboriosam ut inventore exercitationem perferendis necessitatibus Voluptatibus quos nam totam quae repellendus quod eius Reprehenderit quibusdam error tempora quidem.</div>
+      <footer class="singleColumn-footer">&copy;2021</footer>
+    </div>
+  </section>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

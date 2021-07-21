@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;   /* Animate the scroll instead of suddent jump */
+  scroll-padding-top: 6rem;  /* Do not scroll all the way down */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.content > div:target {  /* When scrolling to section: */
+  padding: .5rem;
+  outline: 1px solid orange;
+}
+
+.singleColumn {
+  text-align: center;
+}
+
+.singleColumn-header {
+  background-color: orange;
+  height: 8rem;
+}
+
+.singleColumn-header-h1 {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+}
+
+.singleColumn-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 2rem;
+  padding: .5rem;
+  padding-top: 1.5rem;
+  background-color: darkorange;
+}
+
+.singleColumn-nav > a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.content > div {
+  margin: 3rem;
+  font-size: 100%;
+  font-family: arial;
+}
+
+.content > h2 {
+  margin-top: 2rem;
+}
+
+.singleColumn-footer {
+  display: flex;
+  background-color: #666;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
