@@ -1,0 +1,134 @@
+:root {
+  --colorPrimary: #21201e;
+  --colorSecundary: #181818;
+  --colorTextGray: #818181;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--colorSecundary);
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--colorPrimary);
+  color: #ffffff;
+  align-items: center;
+  padding: 0;
+  height: 3rem;
+  padding-bottom: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+#telegramStatus {
+  padding-right: 4rem;
+  font-weight: 420;
+}
+
+.circularButton {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background-color: var(--colorPrimary);
+  color: #ffffff;
+  position: relative;
+}
+
+.circularButton.hamburger {
+  font-size: 2.6rem;
+  width: calc(4.8rem * 0.8);
+  height: 4.8rem;
+  transform: scale(1, 0.8);
+  margin-left: -0.2rem;
+}
+
+.circularButton.hamburger:hover {
+  background-color: var(--primaryColor);
+}
+
+.circularButton.lock {
+  margin-left: 5.4rem;
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.circularButton.search {
+  transform: rotate(-45deg);
+  font-size: 1.8rem;
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.circularButton:hover {
+  background-color: #2a2a28;
+}
+
+
+
+.chats > .chat {
+  display: flex;
+  padding: 0.7rem;
+  flex-wrap: wrap;
+}
+
+
+.chats > .chat > .columnLeft {
+  width: 16%;
+  padding-bottom: 1rem;
+}
+
+.chats > .chat > .columnMiddle  {
+  width: 74%;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+  line-height: 1.3rem;
+}
+
+.chats > .chat > .columnRight {
+  width: 10%;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+.chats > .chat .profileImage {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100px;
+  background-color: red;
+}
+
+.chats > .chat .chatTitle {
+  font-size: 1.1rem;
+}
+
+.chatLastUser {
+  font-size: 0.9rem;
+}
+
+.chatLastMessage {
+  font-size: 0.9rem;
+}
+
+.chats > .chat .chatLastMessage {
+  color: var(--colorTextGray);
+}
+
+.chats > .chat .chatLastMessageDate {
+  color: var(--colorTextGray);
+}
+
+.chats > .chat .chatUnreadMessages {
+  width: 1.9rem;
+  height: 1.5rem;
+  margin-top: 0.6rem;
+  padding-top: 0.4rem;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: .5rem;
+  background-color: #454545;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Avoid favicon /GET request if you don't have a favicon -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <title>Telegram Android App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Set defaults to avoid inconsistence between browser defaults -->
+  <link rel="stylesheet" href="./css/normalice.css" media="all">
+  <!-- Project Styles -->
+  <link rel="stylesheet" href="./css/main.css" media="all">
+  <!-- Android default font-text (used by telegram app) -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" media="all">
+
+</head>
+<body>
+<!-- 
+  div#app>nav>button[type="button"].circularButton.hamburger{&#8801;}+h1#telegramStatus{Telegram}+button[type="button"].circularButton.lock{🔓}+button[type="button"].circularButton.search{&#9906;}^div.chats>div.chat>div.columnLeft>img.profileImage[alt="chat profile image"][src="./resources/profile_image_placeholder.png"]^div.columnMiddle>div.chatTitle{Title of chat}+div.chatLastUser{StringManolo}+div.chatLastMessage{Hey, how are you? :D}^div.columnRight>div.chatLastMessageDate{15:03}+div.chatUnreadMessages.circularButton{2}
+-->
+  <div id="app">
+    <nav>
+      <button class="circularButton hamburger" type="button">&#8801;</button>
+      <h1 id="telegramStatus">Telegram</h1>
+      <button class="circularButton lock" type="button">🔓</button>
+      <button class="circularButton search" type="button">&#9906;</button>
+    </nav>
+    <div class="chats">
+      <div class="chat">
+        <div class="columnLeft"><img class="profileImage" src="./resources/profile_image_placeholder.png" alt="chat profile image"></div>
+        <div class="columnMiddle">
+          <div class="chatTitle">Title of chat</div>
+          <div class="chatLastUser">StringManolo</div>
+          <div class="chatLastMessage">Hey, how are you? :D</div>
+        </div>
+        <div class="columnRight">
+          <div class="chatLastMessageDate">15:03</div>
+          <div class="chatUnreadMessages circularButton">2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
